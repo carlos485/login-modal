@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login modal</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="wrap">
+        <span onclick="cerrar()">x</span>
+        <form action="">
+            <h2>Welcome</h2>
+            <label for="">
+                <input type="text" placeholder="Usuario">
+            </label>
+
+            <label for="">
+                <input type="password" placeholder="Contraseña">
+            </label>
+
+            <label for="">
+                <button>Log in</button>
+            </label>
+        </form>
+
+        <button id="open" onclick="abrir()">Log in</button>
+    </div>
+</body>
+</html>
+<script>
+    function abrir(){
+        document.getElementById('wrap').className='open'
+    }
+    function cerrar(){
+        document.getElementById('wrap').className=''
+    }
+</script>
