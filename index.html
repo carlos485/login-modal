@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>login modal</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-
-  <div class="log" id="wrap">
-    <span class="close" onclick="cerrar()">x</span>
-    <form action="">
-        <h2>Iniciar Sesión</h2>       
-        <div class="avatar">
-          <img src="avatar.png" alt="" />
-        </div> 
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="log" id="wrap">
+      <span class="close" onclick="cerrar()">x</span>
+      <form action="">
+        <h2>Iniciar Sesión</h2>
+        <img src="avatar.png" class="avatar" alt="" />
         <label for="">
-            <input type="email" placeholder="Usuario" required>
+          <input type="email" placeholder="Usuario" required />
         </label>
 
         <label for="">
-            <input type="password" placeholder="Contraseña" required>
+          <input type="password" placeholder="Contraseña" required />
         </label>
 
         <label for="">
-            <button>Ingresar</button>
+          <button>Ingresar</button>
         </label>
-    </form>
+      </form>
 
-    <button id="open" onclick="abrir()">Ingresar</button>
-</div>
-  
-
-</body>
+      <button id="open" onclick="abrir()">Ingresar</button>
+    </div>
+  </body>
 </html>
 <script>
-    function abrir(){
-        document.getElementById('wrap').className='open'
-    }
-    function cerrar(){
-        document.getElementById('wrap').className=''
-    }
+  function abrir() {
+    document.getElementById("wrap").className = "open";
+  }
+  function cerrar() {
+    document.getElementById("wrap").className = "";
+  }
 </script>
